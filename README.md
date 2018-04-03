@@ -1,5 +1,7 @@
 # Night Messenger
 
+![Night Messenger Screenshot](https://i.imgur.com/I2zgqPa.png)
+
 **Night Messenger** is a simple toggle-able Chrome extension that provides a dark theme for Facebook's Messenger.com interface.
 
 We are not affiliated with Facebook.
