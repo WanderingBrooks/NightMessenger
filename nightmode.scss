@@ -22,7 +22,11 @@ time._3oh- {
 
 /* Lower section of nickname modal*/
 ._29hl ._5l37 {
-  background: gray !important;
+  background: $darkgray !important;
+}
+
+._5qsj {
+  color: $white !important;
 }
 
 /*Edit your nickname input bg*/
@@ -58,6 +62,10 @@ time._3oh- {
 ._36ic {
   background-color: $darkgray !important;
   color: $white !important;
+}
+
+._673w {
+  background-color: $darkgray !important;
 }
 
 /* Messenger header bar border bottom I think */
@@ -141,9 +149,9 @@ span._3oh- {
 /*_5l-3*/
 
 // New Message Photo Profile photo
-._5l-3._1ht1._1ht2 ._1qt3._5l-3:not(._55lt) {
-  // filter: invert(100%);
-}
+// ._5l-3._1ht1._1ht2 ._1qt3._5l-3:not(._55lt) {
+//   // filter: invert(100%);
+// }
 
 /* Current Conversation Name */
 ._1ht6{
