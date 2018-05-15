@@ -13,9 +13,16 @@ We are not affiliated with Facebook.
 
 Run these following to ensure you're using the same dependencies:
 
-```
+```shell
+# Should be node 6.10.0
 nvm use
 yarn install
+
+# To compile
+gulp sass
+
+# To watch
+gulp sass:watch
 ```
 
 ## Changing the theme
