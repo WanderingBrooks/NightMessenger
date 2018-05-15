@@ -7,6 +7,7 @@
  $lightgray: #36393E;
  $accent: #233276;
 
+ $border: 1px solid darken($white, 50);
 /* Sections will be from left to right, top-bottom. */
 
 /* Weird classes*/
@@ -22,7 +23,12 @@ time._3oh- {
 
 /* Lower section of nickname modal*/
 ._29hl ._5l37 {
-  background: gray !important;
+  background: $darkgray !important;
+  border-top: $border;
+}
+
+._5qsj {
+  color: $white !important;
 }
 
 /*Edit your nickname input bg*/
@@ -41,23 +47,35 @@ time._3oh- {
 
 /* Youtube Link description bg color */
 ._5swm {
-  background-color: #C3C9D1 !important;
+  background-color: $lightgray !important;
+}
+
+._tih {
+  border-radius: inherit;
+  background-color: $lightgray;
 }
 
 /* Sidepanel border left */
 ._4_j5{
-  border-left: 1px solid #5A6364 !important;
+  border-left: $border;
 }
 
 /* Link description text */
 ._5rw4{
   color: darken($white, 15) !important;
+  border-radius: inherit;
 }
 
 /* Messenger Header Bar*/
 ._36ic {
   background-color: $darkgray !important;
   color: $white !important;
+  border-bottom: $border;
+}
+
+._673w {
+  background-color: $darkgray !important;
+  border-bottom: $border;
 }
 
 /* Messenger header bar border bottom I think */
@@ -88,7 +106,8 @@ a._3oh-{
   color: $white !important;
 }
 
-span._3oh- {
+/* Text Inside Chat Bubble */
+span._3oh-, ._hh7 a {
   color: lighten($white, 15) !important;
 }
 
@@ -111,7 +130,15 @@ span._3oh- {
 
 /* Search Bar Placeholder Text */
 ._58al::placeholder{
-  color: $white !important;
+  color: $lightgray !important;
+}
+
+/* Search - Group Result */
+._225b {
+  color: $white;
+}
+._3q34, ._3q35 {
+  color: $white;
 }
 
 /* CONVERSATIONS */
@@ -120,6 +147,7 @@ span._3oh- {
 
 ._1ht1{
   background-color: $darkgray !important;
+  border-top: $border;
 }
 
 /* Current Conversation Item*/
@@ -141,9 +169,9 @@ span._3oh- {
 /*_5l-3*/
 
 // New Message Photo Profile photo
-._5l-3._1ht1._1ht2 ._1qt3._5l-3:not(._55lt) {
-  // filter: invert(100%);
-}
+// ._5l-3._1ht1._1ht2 ._1qt3._5l-3:not(._55lt) {
+//   // filter: invert(100%);
+// }
 
 /* Current Conversation Name */
 ._1ht6{
@@ -160,7 +188,16 @@ span._3oh- {
   color: gray !important;
 }
 
+/* Conversation Loading Bar */
+._19hf {
+  background-color: $lightgray;
+}
+
 /* MAIN MESSAGING SECTION */
+
+._1t2u {
+  border-left: $border;
+}
 
 /* New Messaging Person's Name */ 
 ._llq span._3oh-{
@@ -178,7 +215,6 @@ span._3oh- {
 
 // Attachment unavailable: bubble
 ._5i_d {
-  border: 1px solid $accent;
   background-color: transparent !important;
   // Attachment Unavailable
   .__6k {
@@ -187,20 +223,35 @@ span._3oh- {
   .__6l {
     color: $white !important;
   }
+  .__6m {
+    color: $white !important;
+  }
 }
 
-// Emojis in main messaging section
+/* Emoji Reactions */
+._aou {
+  background-color: grey;
+  ._4kf5 {
+    background-color: grey;
+    color: $white;
+  }
+}
+
+/* Emojis in main messaging section */
 ._1ifu {
   padding: 10px;
 }
 
-// Emojis inside the emoji menu
+/* Emojis inside the emoji menu */
 ._5f0v._4pia ._1ifu {
   padding: 0 !important;
 }
 
 /* BG */
 ._4_j4{
+  .chatAttachmentShelf {
+    border-top: $border;
+  }
   background-color: $darkgray !important;
 }
 
@@ -208,6 +259,7 @@ span._3oh- {
 
 /* Enter New Message BG */
 ._4rv3{
+  border-top: $border;
   background-color: $darkgray !important;
 }
 
@@ -267,17 +319,12 @@ a._4ce_ {
 /* People, Add People */
 ._1lj0, ._4rph ._4rpj {
   color: $white !important;
+  border-top: $border;
 }
 
 /* People BG */
 ._5l37{
   background-color: $darkgray !important;
-}
-
-/* People border-top */
-
-._5l38{
-  border-top: 1px solid darken($white, 15) !important;
 }
 
 /* People text */
