@@ -4,6 +4,7 @@
   "description": "A night-theme for Facebook's Messenger.com. Unofficial.",
   "main": "n/a",
   "scripts": {
+    "dev": "./node_modules/gulp/bin/gulp.js sass:watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

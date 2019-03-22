@@ -23,6 +23,8 @@ gulp sass
 
 # To watch
 gulp sass:watch
+
+# or you can run 'yarn dev' as an alias!
 ```
 
 ## Changing the theme
