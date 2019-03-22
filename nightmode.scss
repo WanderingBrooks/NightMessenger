@@ -6,6 +6,7 @@
  $white: #ADAEB0;
  $lightgray: #36393E;
  $accent: #233276;
+ $lightaccent: lighten(#233276, 20);
 
  $border: 1px solid darken($white, 50);
 /* Sections will be from left to right, top-bottom. */
@@ -16,9 +17,31 @@ time._3oh- {
   color: $white !important;
 }
 
-/* Change nickname modal */ 
+/* Settings modal */ 
 ._4eby {
-  background: grey !important;
+  background: $darkgray !important;
+  border-radius: 0px;
+  border: 1px solid $accent;
+
+  // Various text inputs
+  ._374c,
+  ._19jt, 
+  ._6cs7,
+  ._4ng2, 
+  ._6ct8,
+  ._6ct9,
+  ._6cs6,
+  ._4ebz,
+  ._4eb- {
+    color: $white !important;
+  }
+  ._6ct7,
+  ._6ct8 {
+    color: $lightaccent !important;
+    font-weight: bold;
+  }
+
+
 }
 
 /* Lower section of nickname modal*/
@@ -247,9 +270,9 @@ span._3oh-, ._hh7 a {
 }
 
 /* Emojis in main messaging section */
-._1ifu {
-  padding: 10px;
-}
+// ._1ifu {
+//   padding: 10px;
+// }
 
 /* Emojis inside the emoji menu */
 ._5f0v._4pia ._1ifu {
@@ -349,6 +372,9 @@ a._4ce_ {
 /* Message from me BG */
 ._3i_m._nd_ ._3058._ui9._hh7._s1-._52mr {
   background-color: $accent !important;
+  ._1ifu {
+    padding: 10px;
+  }
 }
 
 /* Smiley */
@@ -378,4 +404,10 @@ a._4ce_ {
     background-color: $accent !important;
     color: $white !important;
   }
+}
+
+
+// When someone is typing
+._17pz {
+  background-color: $darkgray !important;
 }
