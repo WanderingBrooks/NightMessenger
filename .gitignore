@@ -5,3 +5,7 @@ node_modules/
 upload.zip
 nightmessenger/*
 *.zip
+
+
+# Allow
+!nightmessenger/.gitkeep

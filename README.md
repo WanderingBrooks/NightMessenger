@@ -38,7 +38,7 @@ Originally, we compressed the entire repository, but that included the `node_mod
 ## How to release a new version
 
 1. Run `gulp sass` to run the production build. 
-2. Delete all the files in `nightmessenger/nightmessenger`. 
+2. Update "version" in `manifest.json`
 3. Copy the following files to `nightmessenger/nightmessenger`: 
     - background.js
     - day.js
