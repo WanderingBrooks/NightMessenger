@@ -2,14 +2,29 @@
  * Colors
  */
 
- $darkgray: #1E2124;
- $white: #ADAEB0;
- $lightgray: #36393E;
- $accent: #233276;
- $lightaccent: lighten(#233276, 20);
+$darkgray: #1e2124;
+$white: #adaeb0;
+$lightgray: #36393e;
+$accent: #233276;
+$lightaccent: lighten(#233276, 20);
 
- $border: 1px solid darken($white, 50);
+$border: 1px solid darken($white, 50);
 /* Sections will be from left to right, top-bottom. */
+
+// White text
+@mixin wt() {
+  color: $white !important;
+}
+
+// White fill
+@mixin wf() {
+  fill: $white !important;
+}
+
+// Dark background
+@mixin db() {
+  background-color: $darkgray;
+}
 
 /* Weird classes*/
 
@@ -17,7 +32,48 @@ time._3oh- {
   color: $white !important;
 }
 
-/* Settings modal */ 
+// Top-Left Chat section settings window
+._6-xk {
+  @include db();
+  h1 {
+    @include wt();
+  }
+}
+
+// PARENT CONTAINERS that should have whtie SVGs in them
+
+._6-xk,
+._3058 ._15gf,
+._3tkv {
+  svg path[d] {
+    @include wf();
+  }
+}
+
+  svg path[d] {
+    @include wf();
+  }
+
+// The 'Reply To'
+._67tw._1nc6.ellipsis {
+  @include wt();
+}
+
+// The UI with delete/ edit for Reply To
+._67tu {
+  @include wt();
+  button,
+  strong {
+    @include wt();
+  }
+}
+
+// Search messages modal
+._33p7 {
+  @include db();
+}
+
+/* Settings modal */
 ._4eby {
   background: $darkgray !important;
   border-radius: 0px;
@@ -25,9 +81,9 @@ time._3oh- {
 
   // Various text inputs
   ._374c,
-  ._19jt, 
+  ._19jt,
   ._6cs7,
-  ._4ng2, 
+  ._4ng2,
   ._6ct8,
   ._6ct9,
   ._6cs6,
@@ -40,8 +96,6 @@ time._3oh- {
     color: $lightaccent !important;
     font-weight: bold;
   }
-
-
 }
 
 /* Lower section of nickname modal*/
@@ -55,7 +109,7 @@ time._3oh- {
 }
 
 /*Edit your nickname input bg*/
-._5iwm ._58al{
+._5iwm ._58al {
   background: darkgray !important;
 }
 
@@ -64,7 +118,7 @@ time._3oh- {
 }
 
 /* Link description bg color */
-._2ph_{
+._2ph_ {
   background-color: $accent !important;
 }
 
@@ -79,12 +133,12 @@ time._3oh- {
 }
 
 /* Sidepanel border left */
-._4_j5{
+._4_j5 {
   border-left: $border;
 }
 
 /* Link description text */
-._5rw4{
+._5rw4 {
   color: darken($white, 15) !important;
   border-radius: inherit;
 }
@@ -104,9 +158,9 @@ time._3oh- {
 /* Messenger header bar border bottom I think */
 
 /* Person's Bar */
-._5742{
+._5742 {
   background-color: $darkgray !important;
-  border-bottom: 1px solid #989C9F !important;
+  border-bottom: 1px solid #989c9f !important;
 }
 
 /* Timestamp */
@@ -119,40 +173,46 @@ abbr._1ht7 {
 }
 
 /* Person's Name */
-._17w2 ._3oh-{
-  background-color: $darkgray !important;
-  color: $white !important;
+// ._17w2 ._3oh-{
+//   background-color: $darkgray !important;
+//   color: $white !important;
+// }
+
+// Person's Name POST2019CHANGES
+._6ybk a {
+  @include wt();
 }
 
 /* "Facebook Profile" Link */
-a._3oh-{
+a._3oh- {
   color: $white !important;
 }
 
 /* Text Inside Chat Bubble */
-span._3oh-, ._hh7 a {
+span._3oh-,
+._hh7 a {
   color: lighten($white, 15) !important;
 }
 
 /* "Active On Messenger" */
-._2v6o{
+._2v6o {
   color: $white !important;
 }
 
 /* Search Bar (background) */
-._5iwm{
+._5iwm {
   background-color: $darkgray !important;
 }
- ._58al._5iwm {
+._58al._5iwm {
   background-color: gray !important;
- }
+}
 /* Inner Search Bar */
-._58ak{
+._58ak {
   background-color: $darkgray !important;
 }
 
 /* Search Bar Placeholder Text */
-._58al::placeholder{
+._58al::placeholder {
   color: $lightgray !important;
 }
 
@@ -160,7 +220,8 @@ span._3oh-, ._hh7 a {
 ._225b {
   color: $white;
 }
-._3q34, ._3q35 {
+._3q34,
+._3q35 {
   color: $white;
 }
 
@@ -173,13 +234,13 @@ span._3oh-, ._hh7 a {
 
 /* General Conversation Item */
 
-._1ht1{
+._1ht1 {
   background-color: $darkgray !important;
   border-top: $border;
 }
 
 /* Current Conversation Item*/
-._1ht2{
+._1ht2 {
   background-color: $darkgray !important;
 }
 
@@ -188,8 +249,9 @@ span._3oh-, ._hh7 a {
 }
 
 /* New Message Conversation alert */
-._1ht3, ._1ht3._1ht1{
-  background-color: #002F4C !important;
+._1ht3,
+._1ht3._1ht1 {
+  background-color: #002f4c !important;
 }
 
 /* Other Conversations */
@@ -206,7 +268,7 @@ span._3oh-, ._hh7 a {
 // }
 
 /* Current Conversation Name */
-._1ht6{
+._1ht6 {
   color: $white !important;
 }
 
@@ -216,7 +278,7 @@ span._3oh-, ._hh7 a {
 }
 
 /* Current Conversation: Message Preview */
-._1htf{
+._1htf {
   color: gray !important;
 }
 
@@ -231,13 +293,14 @@ span._3oh-, ._hh7 a {
   border-left: $border;
 }
 
-/* New Messaging Person's Name */ 
-._llq span._3oh-{
+/* New Messaging Person's Name */
+._llq span._3oh- {
   color: $white !important;
 }
 
-._36zg, ._1n-e{
-  color: $white !important;  
+._36zg,
+._1n-e {
+  color: $white !important;
 }
 
 // Group convo: user's name
@@ -280,7 +343,7 @@ span._3oh-, ._hh7 a {
 }
 
 /* BG */
-._4_j4{
+._4_j4 {
   .chatAttachmentShelf {
     border-top: $border;
   }
@@ -290,7 +353,7 @@ span._3oh-, ._hh7 a {
 /* WRITE NEW MESSAGE */
 
 /* Enter New Message BG */
-._4rv3{
+._4rv3 {
   border-top: $border;
   background-color: $darkgray !important;
 }
@@ -315,47 +378,50 @@ span._3oh-, ._hh7 a {
 
 a._4ce_ {
   filter: invert(100%);
+  opacity: 0.7;
 }
 
 /* Enter New Msg PlaceHolder Text */
-._5rpu{
+._5rpu {
   color: $white !important;
 }
 
 /* SIDE PANEL */
 /* BG */
-._4_j5{
+._4_j5 {
   background-color: $darkgray !important;
 }
 
 /* Top section: Name; */
-._3eur ._3oh-{
-  color: $white !important; 
+._3eur ._3oh- {
+  color: $white !important;
 }
 
 /* Group name */
-._2jnv{
+._2jnv {
   color: $white !important;
 }
 
 /* Top section: Last active status */
-._3eus{
+._3eus {
   color: $white !important;
 }
 
 /* Mute Notifications */
-._3x6u, ._3szq{
-  color: #A8ADB0 !important;
+._3x6u,
+._3szq {
+  color: #a8adb0 !important;
 }
 
 /* People, Add People */
-._1lj0, ._4rph ._4rpj {
+._1lj0,
+._4rph ._4rpj {
   color: $white !important;
   border-top: $border;
 }
 
 /* People BG */
-._5l37{
+._5l37 {
   background-color: $darkgray !important;
 }
 
@@ -383,22 +449,22 @@ a._4ce_ {
 }
 
 /* Mute Status */
-._3x6v{
-  color: #4F64FF !important;
+._3x6v {
+  color: #4f64ff !important;
 }
 
 /* "Facebook Profile" & "Shared Photos" Labels */
-._3tl0{
+._3tl0 {
   color: $white !important;
 }
 
 /* Facebook Profile: LINK */
-._3oh-{
+._3oh- {
   color: $darkgray !important;
 }
 
 // Dropdown search menu
-._29hl div.clearfix{
+._29hl div.clearfix {
   color: $darkgray !important;
   &:hover {
     background-color: $accent !important;
@@ -406,8 +472,9 @@ a._4ce_ {
   }
 }
 
-
 // When someone is typing
 ._17pz {
   background-color: $darkgray !important;
 }
+
+// F
