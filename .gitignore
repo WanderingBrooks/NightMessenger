@@ -3,4 +3,5 @@ popup.js
 node_modules/
 .DS_Store
 upload.zip
+nightmessenger/*
 *.zip
