@@ -54,6 +54,10 @@ Originally, we compressed the entire repository, but that included the `node_mod
 4. Compress `nightmessenger/nightmessenger` (which now has the updated files) into a ZIP file.
 5. Paste the file into the Chrome Extensions Developer dashboard.
 
+## Developing
+1. Refresh the extension
+2. Hard Refresh the page
+
 
 ## Misc
 

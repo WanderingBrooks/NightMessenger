@@ -10,4 +10,5 @@ A big thank you to everyone who has helped to manage and maintain this extension
 
 ## OSS Contributors
 - [@awwong1](https://github.com/awwong1)
+- [@blakebuthod](https://github.com/blakebuthod)
 

@@ -23,7 +23,10 @@ $border: 1px solid darken($white, 50);
 
 // Dark background
 @mixin db() {
-  background-color: $darkgray;
+  background-color: $darkgray !important;
+}
+@mixin wb() {
+  background-color: white;
 }
 
 /* Weird classes*/
@@ -50,9 +53,9 @@ time._3oh- {
   }
 }
 
-  svg path[d] {
-    @include wf();
-  }
+svg path[d] {
+  @include wf();
+}
 
 // The 'Reply To'
 ._67tw._1nc6.ellipsis {
@@ -189,9 +192,12 @@ a._3oh- {
 }
 
 /* Text Inside Chat Bubble */
-span._3oh-,
+._3058._ui9._hh7._6ybn._s1-._52mr._3oh- span._3oh-._58nk,
 ._hh7 a {
   color: lighten($white, 15) !important;
+}
+._3058._ui9._hh7._6ybn._s1-._52mr._43by._6ybp._3oh- span{
+  color: initial !important; 
 }
 
 /* "Active On Messenger" */
@@ -436,12 +442,12 @@ a._4ce_ {
 }
 
 /* Message from me BG */
-._3i_m._nd_ ._3058._ui9._hh7._s1-._52mr {
-  background-color: $accent !important;
-  ._1ifu {
-    padding: 10px;
-  }
-}
+// ._3i_m._nd_ ._3058._ui9._hh7._s1-._52mr {
+//   background-color: $accent !important;
+//   ._1ifu {
+//     padding: 10px;
+//   }
+// }
 
 /* Smiley */
 ._583a {
@@ -477,4 +483,91 @@ a._4ce_ {
   background-color: $darkgray !important;
 }
 
-// F
+// Emoji window BG (TY @blakebuthod!)
+._aou,
+._4owc ._53ij {
+  background: #808080 !important;
+}
+
+// Area at the bottom of GIFS
+
+._3i_m._nd_ ._2f5n._4br2._29ew {
+  background-color: #223176 !important;
+}
+._29_7 ._2f5n._4br2._29ew {
+  background-color: #35393d !important;
+}
+._2f5n._4br2._29ew span {
+  color: #d4d4d6 !important;
+}
+._5irm._7mkm {
+  @include db();
+}
+
+// Area in GIF selector before GIF loads
+._1r_9 ._53ij {
+  @include db();
+}
+// Arrow associated with GIF selector
+._1r_9 ._53ik ._53io {
+  filter: invert(85%);
+}
+
+// Search icon Bg on Sticker selector
+._5r8a._5r8b {
+  @include db();
+}
+// Search input form
+._58al {
+  background: transparent;
+}
+
+label._58ak._3ct8 {
+  background-color: transparent !important;
+}
+
+// Sticker search input
+._2pgc {
+  background: $white !important;
+}
+// Active sticker category
+._1uwz {
+  background: $lightaccent;
+}
+
+// Feedback invitation in sidebar
+._7ht_ {
+  color: $white;
+}
+
+// Settings dropdown
+._558b ._54ng {
+  @include db();
+  span {
+    color: $white !important;
+  }
+}
+// Arrow associated with Settings dropdown
+._53il ._558b + ._53io {
+  filter: invert(85%);
+}
+
+// Item in settings dropdown
+._2i-c ._54ni:hover {
+  background: lighten($darkgray, 10);
+}
+
+._3mts .uiScrollableArea.contentAfter:after {
+  background: none;
+  background: linear-gradient(rgba(255, 255, 255, 0.05), $darkgray) !important;
+}
+
+// Like emoji
+._2poz._ui9._576q {
+  svg {
+    position: relative !important;
+  }
+  div {
+    display: none !important;
+  }
+}
