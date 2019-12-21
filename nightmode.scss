@@ -176,10 +176,10 @@ abbr._1ht7 {
 }
 
 /* Person's Name */
-// ._17w2 ._3oh-{
-//   background-color: $darkgray !important;
-//   color: $white !important;
-// }
+._17w2 ._3oh-{
+  background-color: $darkgray !important;
+  color: $white !important;
+}
 
 // Person's Name POST2019CHANGES
 ._6ybk a {
@@ -196,8 +196,8 @@ a._3oh- {
 ._hh7 a {
   color: lighten($white, 15) !important;
 }
-._3058._ui9._hh7._6ybn._s1-._52mr._43by._6ybp._3oh- span{
-  color: initial !important; 
+._3058._ui9._hh7._6ybn._s1-._52mr._43by._6ybp._3oh- span {
+  color: initial !important;
 }
 
 /* "Active On Messenger" */
@@ -362,6 +362,12 @@ a._3oh- {
 ._4rv3 {
   border-top: $border;
   background-color: $darkgray !important;
+}
+
+// New Message Placeholder
+._kmc._7kpg ._1p1t {
+  @include wt();
+  -webkit-text-fill-color: $white;
 }
 
 // Write a new message to a person
