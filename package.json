@@ -4,23 +4,23 @@
   "description": "A night-theme for Facebook's Messenger.com. Unofficial.",
   "main": "n/a",
   "scripts": {
+    "build": "gulp sass && ./deploy.sh",
     "dev": "./node_modules/gulp/bin/gulp.js sass:watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aflashyrhetoric/NightMessenger.git"
+    "url": "git+https://github.com/WanderingBrooks/NightMessenger.git"
   },
-  "author": "Kevin Oh",
+  "author": "Ivan Chen, Jason Brooks, Nihaal Pabba, Crystal Rhee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aflashyrhetoric/NightMessenger/issues"
+    "url": "https://github.com/WanderingBrooks/NightMessenger/issues"
   },
-  "homepage": "https://github.com/aflashyrhetoric/NightMessenger#readme",
+  "homepage": "https://github.com/WanderingBrooks/NightMessenger#readme",
   "devDependencies": {
-    "chalk": "^2.4.2",
-    "fs": "^0.0.1-security",
-    "gulp": "^3.9.1",
-    "gulp-sass": "^2.3.2"
+    "chalk": "2.4.2",
+    "gulp": "3.9.1",
+    "gulp-sass": "2.3.2"
   }
 }

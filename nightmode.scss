@@ -53,7 +53,7 @@ time._3oh- {
   }
 }
 
-._1t_p svg path[d] {
+._1t_p button svg path[d] {
   @include wf();
 }
 
@@ -176,8 +176,16 @@ abbr._1ht7 {
 }
 
 /* Person's Name */
-._17w2 ._3oh-{
+._17w2 ._3oh- ._3egs{
   background-color: $darkgray !important;
+  color: $white !important;
+}
+
+._3egs {
+  background-color: $darkgray !important;
+}
+
+._3-9b { 
   color: $white !important;
 }
 
@@ -576,4 +584,14 @@ label._58ak._3ct8 {
   div {
     display: none !important;
   }
+}
+
+// Contact search
+._8slc, ._225b._6ybl {
+  color: $white;
+}
+
+// Chat title
+h2 ._3oh- span {
+  color: $white;
 }
