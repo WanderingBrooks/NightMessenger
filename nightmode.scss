@@ -200,11 +200,10 @@ a._3oh- {
 }
 
 /* Text Inside Chat Bubble */
-._3058._ui9._hh7._6ybn._s1-._52mr._3oh- span._3oh-._58nk,
-._hh7 a {
+._3058._ui9._hh7._6ybn._s1-._52mr._3oh- span._3oh-._58nk, ._hh7 a {
   color: lighten($white, 15) !important;
 }
-._3058._ui9._hh7._6ybn._s1-._52mr._43by._6ybp._3oh- span {
+._3058._ui9._hh7._6ybn._s1-._52mr._43by._6ybp._3oh- span, ._nd_ ._hh7 a {
   color: initial !important;
 }
 
@@ -597,6 +596,6 @@ h2 ._3oh- span {
 }
 
 // Changing chat settings
-span._3oh- > span {
+span._3oh- span span span {
   color: $white; 
 }
