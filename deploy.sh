@@ -9,5 +9,5 @@ cp ./nightmessenger128.png ./nightmessenger
 cp ./nightmessenger48.png ./nightmessenger
 cp ./nightmessenger16.png ./nightmessenger
 cp ./nightmode.css ./nightmessenger
-cp ./off.png ./nightmessenger
-cp ./on.png ./nightmessenger
+cp ./turnOff.png ./nightmessenger
+cp ./turnOn.png ./nightmessenger
