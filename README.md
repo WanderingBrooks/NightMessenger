@@ -1,64 +1,24 @@
 # Night Messenger
 
-<img 
-    src="https://lh3.googleusercontent.com/Zaq8ot6x9MK2gA6CtX_il9lWkdd2PB6iqc9DWgBqrsuin56onzru9qqd4dl8PdmU8GysjsPu4eI=w640-h400-e365" 
-    alt="Night Messenger Screenshot" 
-/>
-
 **Night Messenger** is a simple toggle-able Chrome extension that provides a dark theme for Facebook's Messenger.com interface.
 
 We are not affiliated with Facebook.
 
 ## Development Setup
 
-Run these following to ensure you're using the same dependencies:
-
 ```shell
 # Should be node 6.10.0
 nvm use
-yarn install
+npm install
 
 # To compile
-gulp sass
+npm run build
 
-# To watch
-gulp sass:watch
-
-# or you can run 'yarn dev' as an alias!
+# To use
+Load the `nightmessenger` extension as a unpacked extension in chrome
 ```
-
-## Changing the theme
-The `nightmode.scss` file is the SCSS file that controls the theme. A gulp task, `sass:watch` is configured to compile this SCSS file into `nightmode.css`. 
 
 ## What is the "nightmessenger/nightmessenger" directory?
 The `nightmessenger/nightmessenger` directory is the folder that will be compressed into a `.zip` file, which will be uploaded to the Chrome Web Store. 
 
 Originally, we compressed the entire repository, but that included the `node_modules/` directory, the `.gitignore`, and other files that do NOT need to be included in the Chrome extension. 
-
-## How to release a new version
-
-1. Run `gulp sass` to run the production build. 
-2. Update "version" in `manifest.json`
-3. Copy the following files to `nightmessenger/nightmessenger`: 
-    - background.js
-    - day.js
-    - driver.js
-    - manifest.js
-    - night.js
-    - nightmessenger128.png
-    - nightmessenger48.png
-    - nightmessenger16.png
-    - nightmode.css
-    - off.png
-    - on.png
-4. Compress `nightmessenger/nightmessenger` (which now has the updated files) into a ZIP file.
-5. Paste the file into the Chrome Extensions Developer dashboard.
-
-## Developing
-1. Refresh the extension
-2. Hard Refresh the page
-
-
-## Misc
-
-[Link to the Chrome Web Store](https://chrome.google.com/webstore/detail/night-messenger/hjhnmilbfdehpgfcojlmmooknnkhgdmh/reviews?hl=en)
