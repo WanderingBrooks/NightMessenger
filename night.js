@@ -9,6 +9,6 @@ if (!document.getElementById('nightMessenger')) {
   link.id   = 'nightMessenger';
   link.href = a;
 
-  document.head.appendChild(link)
+  document.head.appendChild(link);
   chrome.storage.sync.set({ activated: true });
 }
