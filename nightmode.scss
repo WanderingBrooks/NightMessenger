@@ -80,7 +80,6 @@ time._3oh- {
 ._4eby {
   background: $darkgray !important;
   border-radius: 0px;
-  border: 1px solid $accent;
 
   // Various text inputs
   ._374c,
@@ -111,10 +110,14 @@ time._3oh- {
   color: $white !important;
 }
 
-/*Edit your nickname input bg*/
+/* Search input */
 ._5iwm ._58al {
   background: $lightgray !important;
   color: $white !important;
+
+  &::placeholder {
+    color: $white !important;
+  }
 }
 
 ._23ct {
@@ -594,4 +597,9 @@ h2 ._3oh- span , h2 ._3oh-{
 // Changing chat settings
 span._3oh- span span span {
   color: $white; 
+}
+
+// Edit nickname input
+._5j5f._3oh- {
+  background-color: $lightgray;
 }
