@@ -478,11 +478,6 @@ a._4ce_ {
   color: $white !important;
 }
 
-/* Facebook Profile: LINK */
-._3oh- {
-  color: $darkgray !important;
-}
-
 // Dropdown search menu
 ._29hl div.clearfix {
   color: $darkgray !important;
@@ -592,8 +587,8 @@ label._58ak._3ct8 {
 }
 
 // Chat title
-h2 ._3oh- span {
-  color: $white;
+h2 ._3oh- span , h2 ._3oh-{
+  color: $white !important;
 }
 
 // Changing chat settings
