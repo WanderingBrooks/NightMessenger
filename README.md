@@ -1,3 +1,6 @@
+# Does not work anymore as of December 2020 :(
+
+
 # Night Messenger
 
 **Night Messenger** is a simple toggle-able Chrome extension that provides a dark theme for Facebook's Messenger.com interface.
